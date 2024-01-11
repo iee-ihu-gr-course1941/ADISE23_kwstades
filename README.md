@@ -15,6 +15,7 @@ Ships Display: Conveniently view all ship lengths on the left side of the game s
 Rules Section: Access a comprehensive guide explaining the rules and strategies of the Battleship game.
 
 Getting Started :
+Clone the repository: `git clone [https://github.com/](https://github.com/iee-ihu-gr-course1941/ADISE23_kwstades)
 Open the login.php file in your preferred web browser.
 Log in to receive a personalized welcome, explore the rules section, and start playing the Battleship game!
 
