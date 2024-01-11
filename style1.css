@@ -1,0 +1,201 @@
+
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*index*/
+.wrapper-index {
+
+    background: #0f78f0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    flex-direction: column;
+
+}
+
+.text-index form {
+
+
+    height: 650px;
+
+    width: 700px;
+
+    border: 3px solid rgb(0, 0, 0);
+
+    padding: 20px;
+
+    background: rgb(61, 61, 61);
+
+    border-radius: 20px;
+
+}
+
+.text-index h2 {
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+
+
+.text-index input {
+    
+
+    display: block;
+
+    border: 2px solid #ccc;
+
+    width: 95%;
+
+    padding: 10px;
+
+    margin: 10px auto;
+
+    border-radius: 5px;
+
+}
+
+.text-index label {
+
+   
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    padding: 10px;
+
+}
+
+.text-index button {
+    
+
+    float: right;
+
+    background: rgb(0, 0, 0);
+
+    padding: 17px 30px;
+
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+
+    border:none;
+
+}
+
+.text-index button:hover{
+
+    transition-duration: 0.4s;
+    background-color: #e49f21; 
+    color: white;
+}
+
+.error {
+
+    background: #F2DEDE;
+ 
+    color: #0c0101;
+ 
+    padding: 10px;
+ 
+    width: 95%;
+ 
+    border-radius: 5px;
+ 
+    margin: 20px auto;
+ 
+ }
+
+ /*rules*/
+.rules-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.image-rules{
+    background-image: url("images/wallpaper.jpg");
+    background-color: #cccccc;
+    background-attachment:fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: cover;
+    height: 970px;
+    margin-top: -20px;
+}
+
+
+.text-rules{ 
+margin-top: 80px;
+    
+}
+
+.text-rules h1 {
+
+    text-align: center;
+    
+    color: #e49f21;
+
+}
+.gamerules{
+
+    margin-left: 600px;
+    margin-right: 600px;
+    height: 580px;
+
+    width: 700px;
+
+    border: 3px solid rgb(0, 0, 0);
+
+    padding: 20px;
+
+    background: rgb(61, 61, 61);
+
+    border-radius: 20px;
+}
+.gamerules-text{
+    color: #ccc;
+}
+
+.gamerules a {
+
+    
+
+    float:bottom;
+
+    background: rgb(183, 225, 233);
+
+    padding: 10px 15px;
+
+    color: #fff;
+
+    border-radius: 10px;
+
+    margin-right: 10px;
+
+    border: none;
+
+    text-decoration: none;
+
+}
+
+.gamerules a:hover{
+
+    opacity: .7;
+
+}
+
+
+

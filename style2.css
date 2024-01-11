@@ -1,0 +1,412 @@
+.a {
+    fill: none;
+}
+
+.b {
+    clip-path: url(#a);
+}
+
+.cp {
+    fill: #064273;
+}
+
+.ct {
+    fill: #edeef0;
+}
+
+.c:hover {
+    fill: #e49f21;
+}
+
+.ct:hover {
+    fill: #064273;
+}
+
+/* ship cell */
+.s {
+    fill: #777;
+}
+
+/* overlapping / invalid ship cell */
+.so {
+    fill: #f2e52e;
+}
+
+/* target board : hit cell */
+.h {
+    fill: #fa242e;
+}
+
+/* target board: miss cell */
+.ct.m {
+    fill: #000000;
+}
+
+.cp.m {
+    fill: #edeef0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #bebebe;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: all;
+    justify-content: space-evenly;
+}
+
+.svg_container {
+    align-content: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hidden {
+    display: none;
+    width: auto;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+#title {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.top {
+    background-color: #09488f;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    overflow: hidden;
+    height: 50px;
+
+}
+.scoreboard{
+    background-color: #4e7cb1;
+    flex-direction: column;
+    width: 100%;
+    height: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.player {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+div#player1.player{
+    margin-top: -10px;
+}
+div#player2.player{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.buttons {
+    text-align: center;
+    background-color: #4e7cb1;
+    height: all;
+    padding: 10px;
+    padding-left: 100px;
+    border: 2px;
+
+}
+
+.desc {
+    background-color: #296cb8;
+    overflow: hidden;
+    text-align: center;
+}
+
+.board {
+    padding-bottom: 5px;
+    background-color: green;
+
+}
+
+.submit {
+    background-color: #000000;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
+
+.submit:hover {
+    background-color: #e49f21;
+    color: white;
+}
+
+.submit.suggest {
+    background-color: #f44;
+}
+
+form,
+.buttons {
+    display: grid;
+    min-height: calc(100vh - 232px);
+    padding-right: 15px;
+}
+
+.form-control {
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+.form-control:focus-within {
+    color: var(--form-control-color);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+}
+
+/*Trying to work with pop ups*/
+.modal {
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: green;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 38%;
+}
+
+/* The Close Button */
+.close {
+    color: #9c1212;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .controls
+  {
+    display: none;
+    width: 150px;
+    padding-right: 50px;
+
+  }
+
+  .database
+  {
+    display: none;
+    width: 150px;
+    padding-right: 50px;
+    font-family: monospace;
+    font-size: 115%;
+  }
+
+  .dtbItem
+  {
+    display: none;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #10cc39;
+  }
+
+  .dtbItem svg {
+      display:block;
+      margin: auto;
+      margin-bottom: 5px;
+  }
+
+  .dtbItem svg {
+      margin: auto;
+  }
+
+  .a{fill:none;stroke:#10cc39;stroke-miterlimit:10;}
+  .b{fill:#10cc39;}
+  .hit1 {
+      color: #ffca1a;
+  }
+  .hit1 .a {
+      stroke: #ffca1a;
+  }
+  .hit1 .b {
+      fill: #ffca1a;
+  }
+  
+  .hit2 {
+      color: #ff932d;
+  }
+  .hit2 .a {
+      stroke: #ff932d;
+  }
+  .hit2 .b {
+      fill: #ff932d;
+  }
+
+  .hit3 {
+      color: #ff6f2d;
+  }
+  .hit3 .a {
+      stroke: #ff6f2d;
+  }
+  .hit3 .b {
+      fill: #ff6f2d;
+  }
+
+  .hit4 {
+      color: #ff422d;
+  }
+  .hit4 .a {
+      stroke: #ff422d;
+  }
+  .hit4 .b {
+      fill: #ff422d;
+  }
+
+  .dstry {
+      color: #f00;
+  }
+  .dstry .a {
+      stroke: #f00
+  }
+  .dstry .b {
+      fill: #f00
+  }
+
+  /* .dtbItem code,  */
+  .controls code {
+      display: block;
+      text-align: left !important;
+  }
+
+  .close {
+      user-select: none;
+      cursor: pointer;
+  }
+
+  .label{fill:#fff;}
+
+
+  .targeting:hover {
+      cursor: crosshair;
+  }
+
+  .s:hover {
+      fill: #777;
+  }
+
+  .ct.h:hover,
+  .ct.m:hover {
+    cursor: not-allowed;
+  }
+
+  .etHidden {
+      display: none;
+  }
+
+  #modalText {
+      text-align: center;
+      display: block;
+  }
